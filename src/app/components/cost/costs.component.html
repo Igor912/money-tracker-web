@@ -1,3 +1,10 @@
-<p>
-  costs works!
-</p>
+<div class='container'>
+  <label>
+    <input #newCostTextField> 
+    Add
+  </label>
+
+  <ul>
+      <li *ngFor='let cost of costService.costs;'>{{cost.quantity}}</li>
+  </ul>
+</div>
